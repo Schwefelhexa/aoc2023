@@ -1,7 +1,8 @@
 use anyhow::Result;
 
 mod day01;
-use day01::run_day;
+mod day02;
+use day02::run_day;
 
 fn main() -> Result<()> {
     let input_path = std::env::args().nth(1).ok_or_else(|| anyhow::anyhow!("Missing input path"))?;
